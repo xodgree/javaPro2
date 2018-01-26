@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- 
+	배열: 여러 데이터 값을 저장하는 공간
+		원소-하나의 데이터
+		인덱스-원소를 구분하는 번호. 0부터 매김.
+ -->
+
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var city=["Seoul","Busan","Incheon"];
+		function printArr(){
+			var i;
+			for(i = 0;i<city.length;i++){
+				document.write("배열 데이터 [" +i+ "] =" +city[i]+"<br>");
+			}
+		}
+		printArr();
+	</script>
+</body>
+</html>

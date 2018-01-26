@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- 
+	* 전역변수
+	- 코드 내 어느 위치에서든 선언하여 전 영역에서 사용할수있는 변수
+	
+ -->
+
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var globValue1;		//전역변수선언
+		gloValue2;			//전역변수 선언 , var생략
+		
+		function 함수(){
+			var locValue1 	//지역변수 선언
+				locValue2;	//전역변수 선언 - 함수내부에서 var키워드 생략시 전역변수로 되어짐.
+			locValue=10;
+		}
+		locValue2 = 10;
+		locValue1 = 10;
+	</script>
+		
+</body>
+</html>

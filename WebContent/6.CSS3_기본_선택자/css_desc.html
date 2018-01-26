@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- 
+	*조합선택자
+	: 기존의 여러 선택자를 복합적으로 조합하는 방법을 제공.
+		  구분		       조합방법		                                                   설명
+	  -----------------------------------------------------------
+	  1)후손선택자		선택자A 선택자B		특정 HTML태그의 아래에 있는 모든 태그요소를 선택할수있음.
+	        						선택자B가 선택자A에 
+	        						반드시 포함되어 있을 경우 선택함.
+	   
+	  2)자손선택자 		선택자A > 선택자B	 	특정 HTML태그의 바로 아래에 있는 태그요소를 선택할수있음.
+	        						부모 선택자 A의 직계 자손인 선택자 B를 선택함.
+ 
+ 	  3)인접 형제 선택자	선택자 A + 선택자B	선택자 A 바로 다음에 위치한 선택자 B를 선택함.
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	div ul {color: red;}
+	div h2 {color:yellow;border-bottom-color: purple;}
+</style>
+</head>
+<body>
+	<div>
+		<h2>Descendant Selector</h2>
+		<ul>후손선택자
+			<li>자식의 자식</li>			  
+			<li>자식의 자식</li>
+		</ul>
+		
+	</div>
+	<h2>Descendant Selector_2</h2>
+</body>
+</html>

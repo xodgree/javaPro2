@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- 
+	*함수를 변수에 할당이 가능.
+ -->
+
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function add(x,y){
+			return x+y;
+		}
+		var calSum=add;
+		var addUp=add;
+		document.write("결과값" + calSum(5,10)+"<br>");
+		document.write("결과값" + addUp(3,20)+"<br>");
+	</script>
+</body>
+</html>

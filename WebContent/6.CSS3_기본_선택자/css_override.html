@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!-- 
+	*CSS 적용 우선 순위
+		-하나의 요소에 css 중복정의되면
+		 제일 마지막에 설정된 값이 적용.
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<!-- 외부 스타일 시트를 정의 -->
+	<link type="text/css" rel="stylesheet"
+		href="css_override.css"></link>
+		<style type="text/css">
+		-- 중복 정의 가능하나 맨 마지막 색깔로 됨.
+			p{color: blue;}
+			p{color: yellow;}
+			p{color:red;}
+		</style>
+	
+</head>
+<body>
+	<p>CSS가 중복 정의된 경우 어떤것이 적용될까?</p>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- 
+	*구조적 가상 클래스 선택자
+		E:root		문서의 최상위 태그(html)를 선택함.
+		E:nth-child(n)	앞에서부터 지정된 순서와 일치하는 태그
+						E라면 선택함.
+		E:nth-last-child(n) 뒤에서부터 지정된 순서와 일치하는
+							태그가 E라면 선택함.
+		E:first-child	첫번째 등장하는 태그가 E라면 선택함.
+		E:last-child	마지막에 등장하는 태그가 E라면 선택함.
+						
+	
+ -->
+
+
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<style type="text/css">
+		/*첫번째 태그의 텍스트 색상*/
+		h4:first-child{
+			color: blue;
+			font-size: 20px;
+		}
+		/* 마지막 태그의 텍스트 색상*/
+		h4:last-child{
+			color: red; font-size:20px;
+		}
+		/*홀수 태그*/
+		h4:nth-child(2n+1){
+			background-color: green;
+		}
+		/*짝수 태그*/
+		h4:nth-child(2n) {
+			background-color: yellow;
+}
+	</style>
+</head>
+<body>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	<h4>웹 프로그래밍</h4>
+	
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- 
+	*목록
+		1.무순서 목록
+			1)순서가 없는 목록
+			2)<ul> 태그 사용.(unorderlist)
+			3)목록의 각 항목 앞에 불릿(bullet)이 붙음.
+				<ul>
+					<li>Apples</li>
+					<li>Bananas</li>
+					<li>Lemons</li>
+					<li>Oranges</li>
+				</ul>
+		2.순서 목록
+			1)순서가 있는 목록
+			2)<ol> 태그를 사용 (orderlist)
+			3)목록의 각 항목에는 기본 값으로 type = "1"이 적용.
+		3.정의형 목록
+			1)각 항목을 정의하기 위한 목록
+			2)<dl> 태그 사용.
+			3)정의한 각 항목은 <dt>태그를, 
+			  각 항목에 대한 설명은 <dd>태그를 사용.
+			  	<dl>
+			  		<dt>Coffee</dt>
+			  		<dd>-hot drink</dd>
+			  		<dd>Milk</dd>
+			  		<dd>-cold drink</dd>
+			  	</dl>
+			  		coffee
+			  			-hot drink
+			  		Milk
+			  			-clod drink	
+ -->
+
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 무순서 리스트 -->
+	<section>
+		<article>
+			<h2>무순서 리스트</h2>
+			<ul>
+				<li>coffee</li>
+				<li>
+					<ul>
+						<li>Black tea</li>
+						<li>Green tea</li>
+					</ul>
+				</li>
+				<li>Milk</li>
+			</ul>
+		</article>
+	</section>
+	<!-- 순서 목록 -->
+	<section>
+		<article>
+			<h2>순서목록</h2>
+			<ol>
+				<li>Apples</li>
+				<li>Bananas</li>
+				<li>Lemons</li>
+				<li>Oranges</li>
+			
+			</ol>
+		</article>
+	</section>
+	<!-- 정의형 목록 -->
+	<section>
+		<article>
+			<h2>정의형 목록</h2>
+			<dl>
+				<dt>첫번째 아이템</dt>
+					<dd>- HTML5</dd>
+				<dt>첫번째 아이템</dt>
+					<dd>- CSS3</dd>
+				<dt>세번째 아이템</dt>
+					<dd>- JavaScript</dd>
+					
+					
+			</dl>
+			
+		</article>
+	</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

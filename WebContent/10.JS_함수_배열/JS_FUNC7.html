@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function add(x,y,z){
+			var sum;
+			if((y===undefined) && (z===undefined)){
+				sum=x;
+			}else if(z===undefined){
+				sum=x+y;
+			}else{
+				sum=x+y+z;
+			}
+			return sum;
+		}
+		var r1=add(2);
+		var r2=add(2,3);
+		var r3 = add(2,3,4);
+		document.write("함수 호출 인자 부족" +r1+"<br>");
+		document.write("함수 호출 인자 부족" +r2+"<br>");
+		document.write("정상적인 함수 호출" +r3+"<br>");
+	</script>
+</body>
+</html>

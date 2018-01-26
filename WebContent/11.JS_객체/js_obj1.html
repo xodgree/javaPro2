@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- 
+	1. 자바스크립트 객체
+		1)사용자 정의 객체: 직접 객체의 속성,메소드 정의하여 사용하는 객체
+		2)내장 객체: Array,object,date....
+				-브라우저 객체 모델(BOM,Browser Object,Model)
+					:웹브라우저의 각종 요소를 객체로 표현
+					navigator,screen,location,frames,
+					history,XMLHttpRequest
+				-문서 객체 모델 (DOM,Document,Object Model)
+					:웹 문서의 각종 요소를 객체로 표현
+					document
+				-전역 자바스크립트 객체(Global JavaScript Object)
+					:내장 객체
+		2.객체변수를 이용하여 객체 생성
+			var car = {
+				---
+				객체변수    		name : "Sonata",
+							----    ------
+							속성명		속성값
+							speed : 100,
+							color : "white".
+							door  : 4
+							
+							start:function(){
+								return this.speed+10;
+							}
+			};
+		3. 객체 속성 접근 방법
+			1) 객체명.속성명
+				car.name
+				car.speed
+				car.clor
+			2)객체명['속성명']
+				car['name']
+				car;['speed']
+				car['color']
+		4. 자바스크립트로 제어할 요소를 찾아 결과를 출력하는 방법
+		1)innerHTML 속성 이용
+			document.getElemtByID("carname").in
+		2)textContent속성이용 
+			var cname = document.getElementByID("caarname")
+				
+				
+				
+				
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<p id="var1"></p>
+	<p id="var2"></p>
+	<p id="var3"></p>
+	<script type="text/javascript">
+		var car={
+			name:'Sonata',
+			speed: 100,
+			color:'white'
+		};
+		document.getElementById("var1").innerHTML="자동차 이름 : "+car['name'];
+		document.getElementById("var2").innerHTML="자동차 속도 : "+car.speed;
+		document.getElementById("var2").innerHTML="자동차 색상 : "+car.color
+		;
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

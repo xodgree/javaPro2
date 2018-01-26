@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- 
+	*<iframe>태그
+		-하나의 웹 문서 안에 또 다른 웹 문서를 표시할 때 사용.
+		
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>iframe 공간 분할 태그</h3>
+	<div sytle ="background-color: #ffff00" >
+		<span>
+			<a href="intro.html" target="if_a"></a>
+				인사말
+		</span>
+		<a href="lecture.html" target="if_b"></a>
+				강좌소개
+		</span>
+		<a href="info.html" target="if_c"></a>
+				소개
+		</span>
+		<a href="http://www.president.go.kr/"target="if_d"></a>
+				웹사이트
+		</span>
+		
+	</div>
+	<iframe src = "basic.html" width="400" height="200" name="if_a" frameborder="0">
+	
+	</iframe>
+	<iframe src = "basic.html" width="400" height="200" name="if_b" scrolling="no">
+	
+	</iframe>
+	<div style="background-color: #FFFF00">SIST</div>
+</body>
+</html>

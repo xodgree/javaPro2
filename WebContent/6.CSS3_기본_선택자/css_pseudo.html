@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--  
+	*가상 선택자
+		:웹문서에는 보이지 않지만
+		동작에 영향을 주는 속성을 가상 선택자로 이용.
+		 a:link {color:blue;}
+		   ====
+	*이벤트 가상 클래스 선택자
+		: link 사용자가 마우스 이벤트 행위를 어떻게 하는지에 따라서 스타일 시트 다르게 적용.
+		: visited
+		
+		 
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	a:link {color:blue; text-decoration: underline;}
+	a:visited {color: red;}
+	a:hover {text-decoration: overline;}
+	a:active{background-color: yellow;}
+	div.d1{boder:1px dashed red;
+			width:400px;
+			padding:5px;
+	}
+	div.d1:hover{background-color: yellow;}
+	div.d2{boder:1px dashed green;
+			width:400px;
+			padding:5px;
+	}
+	div.d2:hover{background-color: green;}
+</style>
+</head>
+<body>
+	<h2>Pseudo Class</h2>
+	<p><a href="https://www.w3.org" target="_blank">W3C방문</a>
+	마우스 이벤트에 따른 링크 변화를 잘 보세요.
+	</p>
+	<div class ="d1">
+		<h3>가상 클래스1 영역</h3>
+		마우스 위치에 따른 박스의 스타일 변화를 보세요.
+	</div>
+	<div class ="d2">
+		<h3>가상 클래스2 영역</h3>
+		마우스 위치에 따른 박스의 스타일 변화를 보세요.
+	</div>
+</body>
+</html>

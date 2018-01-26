@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- 
+	입력 양식의 주요 속성 
+		-readonly: 읽기전용속성
+		-disabled: 비활성화속성
+		-autofocus: 자동포커스 속성
+		-placeholder: 현재 폼에 입력해야 하는 텍스트를 희미하게 보여주는 속성
+		-required: 반드시 데이터가 입력되어야 하는 폼을 지정하는 속성
+		-spellcheck: 입력되는 문장의 오타를 실시간으로 체크하는 속성
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>HTML5 입력 양식의 주요 속성을 연습해 봅시다.</h2>
+	<from action="">
+	<p>쓰기가능: <input type ="text" name="name" size="20" placeholder="이름을 입력하세요."autofocus></p>
+	<p>읽기전용: <input type ="text" name="name" size="10" readonly></p>
+	<p>사용안함: <input type ="text" name="name" size="10" disabled></p>
+	<p>자동완성: <input type ="text" name="name" size="10" autocomplete="on" required="required"></p>
+	<textarea rows="3" cols="50" spellcheck="tlue">
+		오타를 체크합니다.
+	</textarea>
+</body>
+</html>

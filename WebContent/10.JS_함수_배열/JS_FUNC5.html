@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- 
+	*반환값 출력
+		function 함수명(매개변수1,매개변수2,매개변수3){	//함수선언
+			실행문장;
+			return 반환값; 
+		}
+		
+		result=함수명(인자1,인자2,인자3);
+ -->
+ 
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var result;
+		function add(name,n){
+			document.write(name+" 학생이 1부터" +n+"까지 덧셈 수행<br>");
+			var sum=0;
+			for(var i=1;i<=n;i++){
+				sum+=i;
+			}
+			return sum;
+		}
+		result=add('정도전',10);
+		document.write("결과: "+result+"<p/>");
+		result=add('이성계',100);
+		document.write("결과: "+result+"<p/>");
+		
+	</script>
+</body>
+</html>

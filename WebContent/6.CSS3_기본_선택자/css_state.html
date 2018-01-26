@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- 
+	*UI 요소 상태 가상 클래스 선택자
+		-입력 폼의 상태를 선택할 때 사용
+		E:enabled		사용 가능한 폼 컨트롤 E를 선택함.
+		E:disabled		사용 불가능한 폼 컨트롤 E를 선택함.
+		E:checked		선택된 폼 컨트롤을 선택함.
+		E:focus			초점이 맞추어진 input태그를 선택함.
+		
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		color: white;
+	}
+	h2:first-letter {
+		font-size: 30px; color:red; text-transform: uppercase;
+	}
+	h3:first-line {
+		color:blue;
+	}
+	input:focus{
+		background-color: red;
+	}
+	input:checked + div.d1{	
+		background-color: gray;
+	}
+	input:checked + div.d2{	
+		background-color: black;
+	}
+</style>
+</head>
+<body>
+	<h2>state pseudo-class</h2>
+	<h3>문제) 대한민국 수도는?</h3>
+	<p>정답작성: <input type="text"></p>
+	<h2>answer</h2>
+	힌트보기: <input type="checkbox">
+		<div class ="d1">
+			남대문이 있는 곳 입니다.
+		</div>
+	정답보기: <input type="checkbox">
+		<div class="d2">
+			서울
+		</div>
+</body>
+</html>

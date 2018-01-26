@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--  
+	*가상 선택자
+		:웹문서에는 보이지 않지만
+		동작에 영향을 주는 속성을 가상 선택자로 이용.
+		 a:link {color:blue;}
+		   ====
+	*이벤트 가상 클래스 선택자
+		: link 사용자가 마우스 이벤트 행위를 어떻게 하는지에 따라서 스타일 시트 다르게 적용.
+		: visited
+		
+		 
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width: 200px; height: 100px; color: blue;
+		background: green; opacity:0.9;
+	}
+	/*가상 클래스*/
+	div:hover{
+	width: 400px; height:50px; color:red;
+	background: yellow; opacity:0.5;
+	transition:all 1.5s 1inear 0.5s;
+	}
+</style>
+</head>
+<body>
+	<h2>가상선택자</h2>
+	<div>
+		가상클래스를 이용하면 애니메이션 효과<br>
+		마우스가 위에 있으면 박스가 늘어나요.
+	</div>
+</body>
+</html>

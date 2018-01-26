@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type ="text/css">
+		.items{
+			border: solid 3px #000000;
+			float:left;
+			margin: 5px;
+		}
+		.items img {
+			display: block;
+		}
+		/*clear 속성
+			:float 속성을 해제하는 역할.
+			속성값
+				-left : 앞에서 적용한 'float: left;'명령 해제
+				-right: 앞에서 적용한 'float: right;'명령 해제
+				-both : 앞에서 적용한 'float: left;'와 
+						'float: right;'명령 해제
+		*/
+		.clear{
+			clear: left;
+		}
+
+</style>
+</head>
+<body>
+	<div class ="items">
+		<img src="img/image1.jpg" alt="" width="120" />
+	</div>
+	<div class ="items">
+		<img src="img/image2.jpg" alt="" width="120" />
+	</div>
+	<div class ="items">
+		<img src="img/image3.jpg" alt="" width="120" />
+	</div>
+	<div class="clear"></div>
+	<div class ="items">
+		<img src="img/image4.jpg" alt="" width="120" />
+	</div>
+	<div class ="items">
+		<img src="img/image5.jpg" alt="" width="120" />
+	</div>
+	<div class ="items">
+		<img src="img/image6.jpg" alt="" width="120" />
+	</div>
+</body>
+</html>

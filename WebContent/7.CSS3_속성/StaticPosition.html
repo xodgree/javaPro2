@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+	*position 속성
+		:태그 요소의 위치를 설정하는 속성.
+		1)position:static;
+			default 속성값,
+			특별히 설정하지 않으면 static임.
+		2)position:absolute;
+			절대좌표를 이용해서 위치를 설정함.
+				position:absolute;top:100px;left:100px;
+		3)position:relative;
+			기본위치를 기준으로 설정만큼 이동됨.
+			상대적으로 얼마나 떨어져 있는지 표시하여 배치함.
+		4)position:fixed;
+			브라우저의 절대좌표를 기준으로 설정됨.
+			창의 인스톨 움직여도 사라지지 않고 고정된 위치에 그대로 있음.
+ -->
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	body{
+		font-weight:bold;
+		font-size:12pt;
+	}
+	.sq1{
+	position: static;
+	top: 100px;
+	background-color: cyan;
+	width:400px;
+	height:50px;
+	}
+	
+</style>
+</head>
+<body>
+	<h1>positioning style1</h1>
+	<p class="sp1">정정 위치 설정 적용1</p>
+	<div class="sp2">정정 위치 설정 적용2</div>
+	<p class="sp3">기본 위치 설정</p>
+</body>
+</html>
